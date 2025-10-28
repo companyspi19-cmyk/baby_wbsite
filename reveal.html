@@ -104,13 +104,13 @@
 
     if(data.GENDER === 'M'){
       boy.style.display='block';
-      meta.textContent = 'النوع: ذكر' + (data.TS ? ' • مُولَّد: ' + new Date(data.TS).toLocaleString('ar',{dateStyle:'medium',timeStyle:'short'}) : '');
+      meta.textContent = 'النوع: ذكر' + (data.TS ? ' • مُولَّد: ');
       document.title = '🎉 إنه ولد!';
       frameTint('M');
       confettiStart();
     }else if(data.GENDER === 'F'){
       girl.style.display='block';
-      meta.textContent = 'النوع: أنثى' + (data.TS ? ' • مُولَّد: ' + new Date(data.TS).toLocaleString('ar',{dateStyle:'medium',timeStyle:'short'}) : '');
+      meta.textContent = 'النوع: أنثى' + (data.TS ? ' • مُولَّد: ');
       document.title = '🎀 إنها بنت!';
       frameTint('F');
       confettiStart();
@@ -159,3 +159,4 @@
   </script>
 </body>
 </html>
+
